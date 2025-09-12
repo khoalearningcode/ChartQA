@@ -1,4 +1,4 @@
-Query,Output,Image Index,Question ID
+Input,Output,Image Index,Question ID
 Is the value of Favorable 38 in 2015?,Yes,10095,0
 How many values are below 40 in Unfavorable graph?,6,10095,1
 In which year the value was 51?,2014,10149,2

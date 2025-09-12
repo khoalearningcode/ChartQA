@@ -15,7 +15,7 @@ def merge_split_to_csv(split_folder, split_name, out_dir):
     out_csv = os.path.join(out_dir, f"{split_name}.csv")
     with open(out_csv, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
-        writer.writerow(["Query", "Output", "Image Index", "Question ID"])
+        writer.writerow(["Input", "Output", "Image Index", "Question ID"])
 
         qid = 0
         for item in all_data:
@@ -30,7 +30,7 @@ def merge_split_to_csv(split_folder, split_name, out_dir):
 
 
 def main():
-    root = "/home/godminhkhoa/Desktop/DATH/ChartQA/ChartQA Dataset/ChartQA-Dataset/ChartQA-Dataset"
+    root = "/home/godminhkhoa/Desktop/DATH/ChartQA/ChartQA Dataset"
     out_dir = "/home/godminhkhoa/Desktop/DATH/ChartQA/Data Extraction"
     os.makedirs(out_dir, exist_ok=True)
 
